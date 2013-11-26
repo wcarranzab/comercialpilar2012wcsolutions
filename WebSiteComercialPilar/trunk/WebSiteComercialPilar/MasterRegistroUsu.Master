@@ -1,0 +1,61 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterRegistroUsu.master.cs" Inherits="MasterRegistroUsu" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Styles/MySyles.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+        .style2
+        {
+            text-align: center;
+        }
+        .style3
+        {
+            height: 234px;
+        }
+        .style4
+        {
+            color: #6600CC;
+            font-size: large;
+            font-family: "Bradley Hand ITC";
+        }
+    </style>
+</head>
+<body class=bodyMarron>
+    <form id="form1" runat="server">
+    
+    <table class="style1">
+        <tr>
+            <td class="style3" colspan="5" style="text-align: center">
+                <asp:Image ID="Image1" runat="server" ImageUrl="~/imagenes/Logo.jpg" 
+                    style="text-align: center" BackColor="#FFD071" />
+            </td>
+        </tr>
+       
+        <tr>
+            <td colspan="5" class=fondoMostaza>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+        <tr>
+            <td class="style2" colspan="5">
+                <span><span class="style4"><strong>Copyright © 2012 COMERCIAL - MUEBLERÍA PILAR</strong></span><strong><br 
+                    class="style4" />
+                </strong><span class="style4"><strong>Todos Los Derechos Reservados</strong></span><strong><br 
+                    class="style4" />
+                </strong><span class="style4"><strong>&nbsp;Lima - Perú</strong></span></span></td>
+        </tr>
+    </table>
+    
+    </form>
+</body>
+</html>

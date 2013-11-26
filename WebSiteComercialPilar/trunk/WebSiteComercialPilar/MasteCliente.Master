@@ -1,0 +1,115 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasteCliente.master.cs" Inherits="MasteCliente" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Styles/MySyles.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+        .style2
+        {
+            text-align: center;
+        }
+        .style3
+        {
+            height: 234px;
+        }
+        .style4
+        {
+            color: #6600CC;
+            font-size: large;
+            font-family: "Bradley Hand ITC";
+        }
+    </style>
+</head>
+<body class="bodyMarron">
+    <form id="form1" runat="server">
+    
+    <table class="style1">
+        <tr>
+            <td class="style3" colspan="5" style="text-align: center">
+                <asp:Image ID="Image1" runat="server" ImageUrl="~/imagenes/Logo.jpg" 
+                    style="text-align: center" BackColor="#FFD071" />
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center">
+                <asp:HyperLink ID="inicio" runat="server" NavigateUrl="~/Novedades.aspx" 
+                    style="font-family: 'Bradley Hand ITC'; font-size: medium; font-weight: 700">INCIO</asp:HyperLink>
+            </td>
+            <td align="center">
+                <asp:Menu ID="Menu1" runat="server" StaticSubMenuIndent="16px" 
+                    
+                    style="font-size: medium;font-weight: 700; font-family: 'Bradley Hand ITC'" 
+                    Orientation="Horizontal" onmenuitemclick="Menu1_MenuItemClick">
+                    <Items>
+                        <asp:MenuItem Text="NOSOTROS" Value="NOSOTROS">
+                            <asp:MenuItem Text="Antecedentes" Value="Antecedentes"></asp:MenuItem>
+                            <asp:MenuItem Text="Misión" Value="Misión"></asp:MenuItem>
+                            <asp:MenuItem Text="Visión" Value="Visión"></asp:MenuItem>
+                            <asp:MenuItem Text="Objetivos" Value="Objetivos"></asp:MenuItem>
+                            <asp:MenuItem Text="Políticas de Empresa" Value="Políticas de Empresa">
+                            </asp:MenuItem>
+                        </asp:MenuItem>
+                    </Items>
+                </asp:Menu>
+            </td>
+            <td align="center">
+&nbsp;
+                <asp:Menu ID="Menu2" runat="server" StaticSubMenuIndent="16px" 
+                    
+                    style="font-size: medium; font-weight: 700; font-family: 'Bradley Hand ITC'" 
+                    Orientation="Horizontal" onmenuitemclick="Menu2_MenuItemClick">
+                    <Items>
+                        <asp:MenuItem Text="PRODUCTOS" Value="PRODUCTOS">
+                            <asp:MenuItem Text="Dormitorios" Value="Dormitorios"></asp:MenuItem>
+                            <asp:MenuItem Text="Salas" Value="Salas"></asp:MenuItem>
+                            <asp:MenuItem Text="Comedores" Value="Comedores"></asp:MenuItem>
+                            <asp:MenuItem Text="Otros Accesorios" Value="Otros Accesorios"></asp:MenuItem>
+                        </asp:MenuItem>
+                    </Items>
+                </asp:Menu>
+&nbsp;&nbsp;&nbsp;
+            </td>
+            <td style="text-align: center">
+                <asp:Menu ID="Menu3" runat="server" 
+                    style="font-size: medium; font-family: 'Bradley Hand ITC'; font-weight: 700">
+                    <Items>
+                        <asp:MenuItem Text="OPCIONES" Value="OPCIONES">
+                            <asp:MenuItem NavigateUrl="~/frmPedido.aspx" Text="Registrar Pedido" 
+                                Value="Registrar Pedido"></asp:MenuItem>
+                        </asp:MenuItem>
+                    </Items>
+                </asp:Menu>
+            </td>
+            <td style="text-align: center">
+                <asp:HyperLink ID="login" runat="server" NavigateUrl="~/Novedades.aspx"
+                    style="font-weight: 700; font-size: medium; font-family: 'Bradley Hand ITC'">CERRAR SESIÓN</asp:HyperLink>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="5" class="fondoMostaza">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+        <tr>
+            <td class="style2" colspan="5">
+                <span><span class="style4"><strong>Copyright © 2012 COMERCIAL - MUEBLERÍA PILAR</strong></span><strong><br 
+                    class="style4" />
+                </strong><span class="style4"><strong>Todos Los Derechos Reservados</strong></span><strong><br 
+                    class="style4" />
+                </strong><span class="style4"><strong>&nbsp;Lima - Perú</strong></span></span></td>
+        </tr>
+    </table>
+    
+    </form>
+</body>
+</html>

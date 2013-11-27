@@ -83,6 +83,12 @@
     <Content Include="imagenes\salida.jpg" />
     <Content Include="libreria\AjaxControlToolkit.dll" />
     <Content Include="Login.aspx" />
+    <Content Include="PrincipalEmpleado.aspx" />
+    <Content Include="Productos.aspx" />
+    <Content Include="RegistrarOrdenDeCompra.aspx" />
+    <Content Include="RegistroUsu.aspx" />
+    <Content Include="SalidaCom.aspx" />
+    <Content Include="SalidaDeli.aspx" />
     <Content Include="Styles\MySyles.css" />
     <Content Include="Styles\Site.css" />
     <Content Include="Ubicanos.aspx" />
@@ -157,7 +163,49 @@
     <Compile Include="MasterRegistroUsu.Master.designer.cs">
       <DependentUpon>MasterRegistroUsu.Master</DependentUpon>
     </Compile>
+    <Compile Include="PrincipalEmpleado.aspx.cs">
+      <DependentUpon>PrincipalEmpleado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PrincipalEmpleado.aspx.designer.cs">
+      <DependentUpon>PrincipalEmpleado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Productos.aspx.cs">
+      <DependentUpon>Productos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Productos.aspx.designer.cs">
+      <DependentUpon>Productos.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegistrarOrdenDeCompra.aspx.cs">
+      <DependentUpon>RegistrarOrdenDeCompra.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistrarOrdenDeCompra.aspx.designer.cs">
+      <DependentUpon>RegistrarOrdenDeCompra.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroUsu.aspx.cs">
+      <DependentUpon>RegistroUsu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistroUsu.aspx.designer.cs">
+      <DependentUpon>RegistroUsu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SalidaCom.aspx.cs">
+      <DependentUpon>SalidaCom.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SalidaCom.aspx.designer.cs">
+      <DependentUpon>SalidaCom.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SalidaDeli.aspx.cs">
+      <DependentUpon>SalidaDeli.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SalidaDeli.aspx.designer.cs">
+      <DependentUpon>SalidaDeli.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Ubicanos.aspx.cs">
       <DependentUpon>Ubicanos.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

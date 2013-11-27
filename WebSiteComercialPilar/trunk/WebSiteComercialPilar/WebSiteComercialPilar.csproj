@@ -62,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ActualizarClave.aspx" />
+    <Content Include="BD\BDComercialPilar.sql" />
     <Content Include="frmBuscarProducto.aspx" />
     <Content Include="frmPagar.aspx" />
     <Content Include="frmPedido.aspx" />
